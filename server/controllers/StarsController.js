@@ -21,14 +21,14 @@ export class StarsController extends BaseController {
       next(error)
     }
   }
-  async getPlanetsfromStar(req, res, next) { //NOTE What is going on 
-    try {
-      let data = await StarService.find(req.query)
-      res.send(data)
-    } catch (error) {
-      next(error)
-    }
-  }
+  // async getPlanetsfromStar(req, res, next) { //NOTE What is going on 
+  //   try {
+  //     let data = await StarService.find(req.query)
+  //     res.send(data)
+  //   } catch (error) {
+  //     next(error)
+  //   }
+  // }
   async getById(req, res, next) {
     try {
       let data = await StarService.findById(req.params.id)

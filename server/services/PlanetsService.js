@@ -14,9 +14,6 @@ class PlanetsService {
     return Planet
   }
 
-  async getPlanetsFromStar() {  //NOTE get something from id
-
-  }
   async create(Planet) {
     return await dbContext.Planets.create(Planet)
   }
